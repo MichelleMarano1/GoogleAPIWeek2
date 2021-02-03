@@ -125,7 +125,7 @@ var map = new google.maps.Map(document.getElementById('map'), {
   zoom: 13,
   center: {lat: 45.170686,
           lng: -76.848964},
-  mapId: "8e0a97af9386fef",
+  mapId: "8e0a97af9386fef", //played around with this beta, My own MapId I made never worked //
   scrollwheel: true,
 
 });
@@ -159,7 +159,7 @@ for (var i = 0; i < locations.length; i++) {
                 google.maps.event.addListener(marker, "click", function (e) {
                     infoWindow.setContent(data.title + "<br>" + data.description );
                     infoWindow.open(map, marker);
-                });})(marker, data);};}
+                });})(marker, data);};} // Tried to add a timer to the window, could not get that to work//
         
     var  locations = [
     {  
