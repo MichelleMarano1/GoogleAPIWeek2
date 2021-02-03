@@ -137,9 +137,10 @@ var infoWindow = new google.maps.InfoWindow({
 
 var image = "bird.png";
 
-
+// Sources Used //
 //https://medium.com/@jackabox/using-google-api-to-create-multiple-maps-with-an-array-of-markers-95e6ebfd4b0//
-
+//https://dotnettec.com/how-to-show-multiple-locations-on-google-maps-using-javascript//
+  
 for (var i = 0; i < locations.length; i++) {
             var data = locations[i];
             var Latlong = new google.maps.LatLng(data.lat, data.long);
@@ -151,7 +152,8 @@ for (var i = 0; i < locations.length; i++) {
                 icon: image,
                 animation: google.maps.Animation.BOUNCE,
             });
-
+  
+// Sources Used //
 //https://forum.webflow.com/t/dynamic-list-to-display-multiple-markers-on-custom-google-maps-embed/43869/3//
 //https://gist.github.com/parth1020/4481893//
 
@@ -160,7 +162,10 @@ for (var i = 0; i < locations.length; i++) {
                     infoWindow.setContent(data.title + "<br>" + data.description );
                     infoWindow.open(map, marker);
                 });})(marker, data);};} // Tried to add a timer to the window, could not get that to work//
-        
+      
+ // Sources Used //     
+ //https://dotnettec.com/how-to-show-multiple-locations-on-google-maps-using-javascript// 
+      
     var  locations = [
     {  
         "title": '<b>Eastern Wood-Peewee</b>',
