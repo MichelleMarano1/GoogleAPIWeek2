@@ -122,11 +122,12 @@
 function initMap() {
 
 var map = new google.maps.Map(document.getElementById('map'), {
-  zoom: 14,
+  zoom: 13,
   center: {lat: 45.170686,
           lng: -76.848964},
   mapId: "8e0a97af9386fef",
   scrollwheel: true,
+
 });
 
 
@@ -141,16 +142,17 @@ var image = "bird.png";
 
 for (var i = 0; i < locations.length; i++) {
             var data = locations[i];
-            var myLatlng = new google.maps.LatLng(data.lat, data.long);
+            var Latlong = new google.maps.LatLng(data.lat, data.long);
 
             var marker = new google.maps.Marker({
-                position: myLatlng,
+                position: Latlong,
                 map: map,
                 title: "Click to zoom", 
                 icon: image,
                 animation: google.maps.Animation.BOUNCE,
             });
 
+//https://forum.webflow.com/t/dynamic-list-to-display-multiple-markers-on-custom-google-maps-embed/43869/3//
 //https://gist.github.com/parth1020/4481893//
 
             (function (marker, data) {
