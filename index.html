@@ -10,113 +10,114 @@
 
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 
-<style type="text/css">
+    <style type="text/css">
 
-#map {
-  height: 100%;
-}
+    #map {
+      height: 100%;
+    }
 
-html,
-body {
-  height: 90%;
-  margin: 0px;
-}
+    html,
+    body {
+      height: 90%;
+      margin: 0px;
+    }
 
 
-.header {
-  background-color:#4aade6;
-  text-align: center;
-  padding: 10px;
-  color:white;
+    .header {
+      background-color:#4aade6;
+      text-align: center;
+      padding: 10px;
+      color:white;
+      }
+
+      .nav {
+      margin-top: 0px;
+      padding: 0px;
+      background-color: #3b3b3b;
+      text-align: center;
+      overflow: hidden;
+      font-family: sans-serif;
+      }
+
+    ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 10px;
+      overflow: hidden;
+    }
+
+
+    li {
+      float: left;
+    }
+
+    li a{
+      display: inline;
+      color: white;
+      text-align: center;
+      padding:20px 20px;
+      text-decoration: none;
+      overflow:hidden;
+    }
+      
+    li a:hover {
+      background-color: #d6d304;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+    .imageColumn {
+      float: left;
+      width: 25%;
+      padding: 10px;
+    }
+    h1 {
+    font-family:  Verdana;
+    font-size: 54px;
+    font-weight: bold;
+    }
+
+    h2 {
+    font-family: 'sans-serif', Verdana, Tahoma;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    }
+
+    h3 {
+    font-family: 'sans-serif', Verdana, Tahoma;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    }
+
+
+    p {
+    font-family: 'sans-serif', Verdana, Tahoma;
+    font-size: 14px;
+    margin-bottom: 40px;
+    }
+
+    ul {
+    font-family: 'sans-serif', Verdana, Tahoma;
+    font-size: 11px;
+    padding-left: 0px;
+    
+    }
+
+    .footer {
+    background-color:#0cc1ee;
+    text-align: center;
+    padding: 1px;
+    color:white;
+    font-size: 12px;
+    font-family: 'Courier New';
   }
 
-  .nav {
-  margin-top: 0px;
-  padding: 0px;
-  background-color: #3b3b3b;
-  text-align: center;
-  overflow: hidden;
-  font-family: sans-serif;
-  }
-
-ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 10px;
-  overflow: hidden;
-}
-
-
-li {
-  float: left;
-}
-
-li a{
-  display: inline;
-  color: white;
-  text-align: center;
-  padding:20px 20px;
-  text-decoration: none;
-  overflow:hidden;
-}
   
-li a:hover {
-  background-color: #d6d304;
-}
-
-* {
-  box-sizing: border-box;
-}
-.imageColumn {
-  float: left;
-  width: 25%;
-  padding: 10px;
-}
-h1 {
-font-family:  Verdana;
-font-size: 54px;
-font-weight: bold;
-}
-
-h2 {
-font-family: 'sans-serif', Verdana, Tahoma;
-font-size: 15px;
-font-weight: bold;
-text-align: center;
-}
-
-h3 {
-font-family: 'sans-serif', Verdana, Tahoma;
-font-size: 15px;
-font-weight: bold;
-text-align: center;
-}
-
-
-p {
-font-family: 'sans-serif', Verdana, Tahoma;
-font-size: 14px;
-margin-bottom: 40px;
-}
-
-ul {
-font-family: 'sans-serif', Verdana, Tahoma;
-font-size: 11px;
-padding-left: 0px;
-
-}
-
-.footer {
-background-color:#0cc1ee;
-text-align: center;
-padding: 1px;
-color:white;
-font-size: 12px;
-font-family: 'Courier New';
-}
-</style>
-
-<script>
+    </style>
+    <script>
 
 function initMap() {
 
@@ -223,9 +224,11 @@ for (var i = 0; i < locations.length; i++) {
     },
     
     ];
-</script>
 
-</head>
+
+    </script>
+
+    </head>
   <body>
     <div class="nav">
         <ul>
@@ -251,20 +254,22 @@ for (var i = 0; i < locations.length; i++) {
             <img src="images\IMG_0822.jpeg" alt="swamp" style="width:100%">
             </div>
             <div class="imageColumn">
-            <img src="images\Enlight11.jpg" alt="lazy" style="width:100%">
+            <img src="images\Enlight11.jpg" alt="sleepy" style="width:100%">
             </div>
             <div class="imageColumn">
-            <img src="images\da2f7506-a067-46c9-85f4-0134c9fae611.jpg" alt="justSad" style="width:100%">
+            <img src="images\da2f7506-a067-46c9-85f4-0134c9fae611.jpg" alt="sad" style="width:100%">
             </div>
             </div>
 
         <h3> Go out, explore and be a bird nerd!</h3>
 
+    </div>
+    
+
     <div id="map"></div>
 
     <div class="footer">
         <p>Michelle Marano 2021    :)</p>
-    </div>
-    
+      </div>
   </body>
 </html>
